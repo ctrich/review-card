@@ -1,0 +1,158 @@
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin: auto;
+  background: hsl(213, 19%, 18%);
+  border-radius: 5%;
+  padding: 35px;
+}
+
+.thanks-container > .card {
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks-container p {
+  text-align: center;
+  padding: 0;
+}
+
+.card-logo {
+  width: 20px;
+  padding: 15px;
+  background: hsl(214, 19%, 22%);
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+.card-result {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(214, 19%, 22%);
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+p,
+li {
+  color: hsl(216, 12%, 54%);
+  padding-right: 20px;
+}
+
+.card-selections {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.card-selections-item {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 15px;
+  background: hsl(214, 19%, 22%);
+  text-align: center;
+  line-height: 25px;
+}
+
+.card-selections-item:hover,
+.card-selections-item:active {
+  background: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.selected {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.card-selections-item,
+.btn {
+  cursor: pointer;
+}
+
+.btn {
+  height: 50px;
+  border-radius: 30px;
+  background: hsl(25, 97%, 53%);
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+
+.btn:hover,
+.btn:active {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 300px;
+    padding: 15px;
+  }
+
+  .card-logo {
+    width: 15px;
+  }
+
+  .card-result {
+    padding: 5px 15px;
+  }
+
+  .card-selections-item {
+    width: 15px;
+    height: 15px;
+    line-height: 20px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+}
+
+.colors {
+  color: hsl(0, 0%, 100%) hsl(217, 12%, 63%) hsl(216, 12%, 54%)
+    hsl(213, 19%, 18%) hsl(216, 12%, 8%);
+}
